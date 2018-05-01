@@ -67,7 +67,7 @@ export default class Container extends Component {
 					/>
 				</DemoRow>
 				<DemoRow>
-					<Button disabled={this.state.hasError} primary medium>
+					<Button disabled={this.state.hasError} primary small>
 						Save
 					</Button>
 				</DemoRow>
