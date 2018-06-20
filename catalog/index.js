@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 import { Catalog, pageLoader } from 'catalog';
 import { Button, Checkbox, TextInput, Bootstrap } from '../components';
 import { colors } from '../components/shared-styles';
+import FlexGridDemo from './flexgrid/demo.jsx';
 import CarouselDemo from './bootstrap/carousel-demo.jsx';
 import DocgenTable from './docgen-table.jsx';
 import '../dist/styles.css';
@@ -32,6 +33,17 @@ const pages = [
 				title: 'Typeahead',
 				content: pageLoader(() => import('./bootstrap/typeahead.md')),
 				imports: { ...Bootstrap },
+			},
+		],
+	},
+	{
+		title: 'Flex Grid',
+		pages: [
+			{
+				path: '/flexgrid/components',
+				title: 'Wijmo Components',
+				content: pageLoader(() => import('./flexgrid/components.md')),
+				imports: { FlexGridDemo },
 			},
 		],
 	},
